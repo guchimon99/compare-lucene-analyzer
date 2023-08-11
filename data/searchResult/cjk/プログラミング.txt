@@ -1,0 +1,3 @@
+Query: プログラミング, File: ./data/file/file_4.txt
+Content: 彼は<B>プログラミング</B>のスキルが高い。 
+

@@ -1,0 +1,3 @@
+Query: ソフトウェア, File: ./data/file/file_2.txt
+Content: この<B>ソフトウェア</B>はバグが多く、修正が必要だ。 
+

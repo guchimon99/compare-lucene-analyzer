@@ -1,0 +1,39 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+
+    implementation 'com.google.guava:guava:31.1-jre'
+
+    implementation 'org.apache.lucene:lucene-analyzers-common:8.11.1'
+    implementation 'org.apache.lucene:lucene-analyzers-kuromoji:8.11.1'
+    implementation 'org.apache.lucene:lucene-core:8.11.1'
+    implementation 'org.apache.lucene:lucene-highlighter:8.11.1'
+    implementation 'org.apache.lucene:lucene-queries:8.11.1'
+    implementation 'org.apache.lucene:lucene-queryparser:8.11.1'
+}
+
+application {
+    mainClass = 'tutorial.App'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+tasks.named('jar') {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    manifest {
+        attributes["Main-Class"] = 'tutorial.App'
+    }
+    from (
+        configurations.runtimeClasspath.filter { it.name.endsWith("jar") }.collect { zipTree(it) }
+    )
+}

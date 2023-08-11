@@ -1,0 +1,3 @@
+Query: アイスクリーム, File: ./data/file/file_0.txt
+Content: 今日は暑いので<B>アイスクリーム</B>が食べたい。 
+

@@ -1,0 +1,3 @@
+Query: バッテリー, File: ./data/file/file_3.txt
+Content: 最近のスマートフォンの<B>バッテリー</B>の持ちが良い。 
+

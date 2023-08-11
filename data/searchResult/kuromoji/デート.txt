@@ -1,0 +1,3 @@
+Query: デート, File: ./data/file/file_1.txt
+Content: 彼女と<B>デート</B>の際には、カフェでコーヒーを楽しんだ。 
+
